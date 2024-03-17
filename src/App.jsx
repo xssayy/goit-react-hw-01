@@ -10,7 +10,12 @@ import transactions from "./data/transactions.json";
 const App = () => {
   return (
     <div>
-      <Profile userData={userData} />
+      <Profile
+        avatar={userData.avatar}
+        location={userData.location}
+        stats={userData.stats}
+        username={userData.username}
+      />
 
       <FriendsList friends={friends} />
 
